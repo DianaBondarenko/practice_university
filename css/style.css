@@ -1,0 +1,431 @@
+*, head, body{font-family: 'Montserrat', helvetica, arial, sans-serif; margin: 0; padding: 0; text-decoration: none; outline: none; box-sizing: border-box; list-style: none}
+
+@font-face {
+    font-family: 'Montserrat', helvetica, arial, sans-serif;
+        src: url("../font/Montseratt-Semibold.ttf");
+}
+
+/*-----------------Navigation-------------------
+-------------------------------------------------*/
+
+nav{
+    padding: 25px 20px!important;
+    z-index: 1000;
+}
+nav ul li a{
+    color: #3d646f!important;
+    font-size: 22px;
+    margin: 0 5px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+nav ul li a:hover{
+    color: #ffffff !important;
+}
+
+/*-----------------First screen-------------------
+-------------------------------------------------*/
+.main{
+    width: 100%;
+    height: 100vh;
+    background: url("../img/main_bg.PNG") no-repeat fixed center;
+    background-size: cover;
+}
+.main .case {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.main .case h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 72px;
+    color: #3d646f;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.main .goDown{width: 10px; height: 35px; position: absolute; bottom: 40px; opacity: 1; left: 50%; transform: translate(-50%, 0);}
+.main .goDown div{position: relative;}
+.main .goDown .svg-c {width: 10px; height: 10px; border-radius: 50%}
+.main .goDown .c1 {position: absolute; top: 5px; background: #cacaca; animation: 2s Circle-1-animation linear infinite;}
+.main .goDown .c2 {position: absolute; top: 17px; background: #b3b3b3; animation: 2s Circle-2-animation linear infinite;}
+.main .goDown .c3 {position: absolute; top: 29px; background: #777777; animation: 2s Circle-3-animation linear infinite;}
+
+/*-----------------About me----------------------
+-------------------------------------------------*/
+.about-me{
+    width: 100%;
+    height: auto;
+    background: white;
+    padding: 25px 0px;
+}
+
+.about-me .container{
+    padding: 40px 0;
+}
+
+.about-me .container img, .my-school .container img{
+    margin-right: 20px;
+    padding: 5px;
+    border: 3px solid #3d646f;
+    border-radius: 10px;
+}
+
+.about-me .container .text-block h2{
+    font-size: 48px;
+    color: #3d646f;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-me .container .text-block p, .my-school .container .text-block p{
+    font-size: 24px;
+    color: #3d646f;
+    text-align: justify;
+    padding: 0 10px;
+}
+
+.about-me .container-fluid .row .item svg{
+    margin-bottom: 20px;
+    color: #3d646f;
+}
+
+.about-me .container-fluid .row .item a{
+    font-size: 32px;
+    color: #3d646f;
+    padding: 10px 10px 5px 10px;
+    border: 3px solid #3d646f;
+    border-radius: 20px;
+    background: #ffffff;
+    transition: 0.5s;
+    margin: 0px!important;
+    display: block;
+    text-align: center;
+    text-decoration: none!important;
+}
+
+.about-me .container-fluid .row .item a:hover{
+    background: #3d646f;
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/*-----------------School----------------------
+----------------------------------------------*/
+.my-school{
+    background: #74b9bc;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+}
+
+.my-school h2{
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.my-school .container .text-block p {
+    color: #ffffff;
+}
+
+.my-school .container img{
+    border: 3px solid #ffffff;
+}
+
+/*.my-school .container .row h2{
+    font-size: 32px;
+}
+
+.my-school .container .row{
+    margin-top: 20px;
+}
+
+.my-school .container .row svg{
+    margin: 0 10px;
+    color: #ffffff;
+}
+
+.my-school .container .row .left-section svg{
+    color: #1e7e34;
+}
+
+.my-school .container .row .right-section svg{
+    color: #a71d2a;
+}
+
+.my-school .container .row p{
+    font-size: 26px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 10px;
+}*/
+
+/*-----------------Dancing---------------------
+-------------------------------------------------*/
+.dancing{
+    padding: 20px 0;
+    width: 100%;
+    height: auto;
+    background-image: url("../img/dancing2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #ffffff;
+}
+
+.dancing h2{
+    font-size: 48px;
+    color: #3d646f;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.dancing .row .text-block p{
+    font-size: 26px;
+    color: #3d646f;
+    text-align: justify;
+
+}
+
+/*-----------------University---------------------
+-------------------------------------------------*/
+.university{
+    padding: 20px 0 0 0;
+    height: auto;
+    width: 100%;
+
+}
+
+.university h2{
+    font-size: 48px;
+    color: #3d646f;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.university h2#whytitle{
+    margin-bottom: 30px;
+    color: #ffffff;
+    margin-top: 20px;
+    padding-top: 30px;
+}
+
+.university .container .row img{
+    margin-right: 20px;
+    padding: 5px;
+    border: 3px solid #3d646f;
+    border-radius: 10px;
+}
+
+.university .container .row img#img2{
+    margin-right: 0px!important;
+    margin-left: 20px!important;
+
+}
+
+.university .container .row p{
+    font-size: 26px;
+    color: #3d646f;
+    text-align: justify;
+}
+
+.university .container2{
+    padding: 0 50px;
+    background-image: url("../img/why_bg.PNG");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.university .container2 .row .col-12{
+    padding: 0 50px;
+}
+
+.university .container2 .row .col-12 svg{
+    color: #f0fdff;
+    margin: 40px 0px;
+}
+
+.university .container2 .row .col-12 p{
+    font-size: 22px;
+    font-weight: 500;
+    color: #f0fdff;
+    text-transform: none;
+    text-align: center;
+}
+
+/*-----------------Video----------------------
+---------------------------------------------*/
+.video{
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+    background: #74b9bc;
+}
+
+.video .container-fluid iframe{
+    border: 3px solid #ffffff;
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.video .container-fluid .row p{
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: lighter;
+    text-transform: none;
+}
+
+/*-----------------Footer----------------------
+----------------------------------------------*/
+footer{
+    width: 100%;
+    height: auto;
+    padding: 40px 0px 0px 0px;
+    background: #ffffff;
+}
+
+footer .container-fluid .row h2{
+    font-size: 28px;
+    color: #3d646f;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+footer .container-fluid .row p{
+    font-size: 18px;
+    color: #3d646f;
+    text-transform: uppercase;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+footer .container-fluid .row form input{
+    width: 80%;
+    height: 48px;
+    border: 3px solid #3d646f;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 24px;
+    color: #3d646f;
+    text-transform: none;
+    font-weight: lighter;
+    text-align: left;
+    margin: 15px 0 0 0;
+    transition: 0.5s;
+    float: left;
+    outline: none!important;
+}
+
+footer .container-fluid .row form input:focus{
+    width: 100%;
+}
+
+footer .container-fluid .row form button{
+    
+    background: #3d646f;
+    color: #ffffff;
+    border: 3px solid #3d646f;
+    width: 80%;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    float: left;
+    transition: 0.5s;
+    padding: 5px 15px;
+    margin: 20px 0;
+}
+
+footer .container-fluid .row form button:hover{
+    color: #3d646f;
+    background: #ffffff;
+}
+
+.footer{
+    background: #74b9bc;
+    padding: 10px 0;
+    text-align: center;
+}
+.footer p{
+    margin: 0!important;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/*-----------Go-down animation----------------
+---------------------------------------------*/
+@keyframes Circle-1-animation
+{
+    from{background: #fff;}
+    14%{background: #eaeaea;}
+    28%{background: #b3b3b3;}
+    42%{background: #777777;}
+    56%{background: #777777;}
+    70%{background: #b3b3b3;}
+    84%{background: #eaeaea;}
+    to{background: #fff;}
+}
+@keyframes Circle-2-animation
+{
+    from{background: #fff;}
+    14%{background: #fff;}
+    28%{background: #eaeaea;}
+    42%{background: #b3b3b3;}
+    56%{background: #777777;}
+    70%{background: #b3b3b3;}
+    84%{background: #eaeaea;}
+    to{background: #fff;}
+}
+@keyframes Circle-3-animation
+{
+    from{background: #fff;}
+    14%{background: #fff;}
+    28%{background: #fff;}
+    42%{background: #eaeaea;}
+    56%{background: #b3b3b3;}
+    70%{background: #777777;}
+    84%{background: #b3b3b3;}
+    98%{background: #eaeaea;}
+    to{background: #fff;}
+}
+
+/*---------------Responsive <768px----------------
+-------------------------------------------------*/
+@media screen and (max-width: 768px){
+    .main .case h1{
+        font-size: 48px;
+    }
+
+    .about-me h2, .my-school h2, .dancing h2, .university h2{
+        font-size: 36px;
+    }
+
+    .about-me .container, .my-school .container, .university .container{
+        text-align: center;
+    }
+
+    .about-me .container img, .my-school .container img, .university .container .row img {
+        margin-bottom: 15px!important;
+        margin-right: 0px!important;
+    }
+}
